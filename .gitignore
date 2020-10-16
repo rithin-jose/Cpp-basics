@@ -1,4 +1,6 @@
 *.exe
 *.json
+*.txt
+*.bat
 .vscode
 .dist
