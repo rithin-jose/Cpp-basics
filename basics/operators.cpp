@@ -83,7 +83,14 @@ int main()
     cout<<(~x)<<endl;  // ~00000101 = 11111010   bitwise NOT
 
     // Assignment operator
-    
+    a=100;      // assign the value on the right to the variable on the left.
+    a+=10;      //This operator first adds the current value of the variable on left to the value on right and then assigns the result to the variable on the left.
+    a-=10;      // This operator first subtracts the value on right from the current value of the variable on left and then assigns the result to the variable on the left.
+    a*=10;      // This operator first multiplies the current value of the variable on left to the value on right and then assigns the result to the variable on the left.
+    a/=10;      //This operator first divides the current value of the variable on left by the value on right and then assigns the result to the variable on the left.
+
+    // Ternary operator
+    e? (cout<<"if true this stmt is evaluated") : (cout<<"else this stmt");
 
 
     return 0;
