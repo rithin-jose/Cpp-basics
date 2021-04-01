@@ -11,7 +11,7 @@ int main()
 /********************************************************
 Title: Input output
 Author: CAC
-Date: 30th march 2021
+Date: 1st April 2021
 Description:
-This code was implemented on day 2 of 100 days of code
+This code was implemented on day 4 of 100 days of code
 *********************************************************/
