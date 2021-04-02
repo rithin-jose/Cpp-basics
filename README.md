@@ -9,6 +9,12 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  5. [Operators](basics/operators.cpp)
  6. [Escape Sequence](basics/escape.cpp)
  7. [Keywords,identifiers and variable naming convention](basics/naming.md)
+ 8. [Control Flow](control flow/controlflow.md)
+		- Entry Control loop
+			- for loop
+			- while loop
+		- Exit Control loop
+			- do-while loop
  9. [conditional statments](conditional/conditional.md)
  	- if-else statements
 		- [if](conditional/if.cpp)
@@ -22,8 +28,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [return](conditional/return.cpp)
 	- [Switch statement](conditional/switch.cpp)
 
- 10. [Control Flow]()
-         <> ( for, while, do while,infinite loop)
+<!-- 
 11. [Macros and Symbolic constants]()
 12. [functions]()
 
@@ -31,4 +36,4 @@ This repositor is intended to have the topics in cpp from basic to advances topi
         <> (rand() srand() math functions)
 
 13. [Conversion of arithmetic type]()
-14. [Strings]()
+14. [Strings]() -->
