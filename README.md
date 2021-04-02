@@ -8,4 +8,16 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  4. [Input and Output manipulator](basics/manipulator.cpp)
  5. [Operators](basics/operators.cpp)
  6. [Escape Sequence](basics/escape.cpp)
- 7. [Keywords,identifiers and variable naming convention](others/naming.md)
+ 7. [Keywords,identifiers and variable naming convention](basics/naming.md)
+ 9. [conditional statments](conditional/conditional.md)
+        <> ( if-else switch)
+ 10. [Control Flow]()
+         <> ( for, while, do while,infinite loop)
+11. [Macros and Symbolic constants]()
+12. [functions]()
+
+ 8. [Standard Header file]() 
+        <> (rand() srand() math functions)
+
+13. [Conversion of arithmetic type]()
+14. [Strings]()
