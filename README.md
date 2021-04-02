@@ -10,7 +10,18 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  6. [Escape Sequence](basics/escape.cpp)
  7. [Keywords,identifiers and variable naming convention](basics/naming.md)
  9. [conditional statments](conditional/conditional.md)
-        <> ( if-else switch)
+ 	- if-else statements
+		- [if](conditional/if.cpp)
+		- [if-else](conditional/ifelse.cpp)
+		- [if-else-if](conditional/ifelseif.cpp)
+		- [nested if](conditional/nestedif.cpp)
+	- Jump statement
+		- [break](conditional/break.cpp)
+		- [goto](conditional/goto.cpp)
+		- [continue](conditional/continue.cpp)
+		- [return](conditional/return.cpp)
+	- [Switch statement](conditional/switch.cpp)
+
  10. [Control Flow]()
          <> ( for, while, do while,infinite loop)
 11. [Macros and Symbolic constants]()

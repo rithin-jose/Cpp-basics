@@ -69,7 +69,7 @@ There are three major divisions in data type:
 
 
 /********************************************************
-Title: Input output
+Title: Data types in C++
 Author: CAC
 Date: 30th march 2021
 Description:

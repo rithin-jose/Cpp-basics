@@ -35,7 +35,7 @@ int main()
 */
 
 /********************************************************
-Title: Input output
+Title: Escape Sequence
 Author: CAC
 Date: 1st April 2021
 Description:

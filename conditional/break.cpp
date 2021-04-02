@@ -4,34 +4,20 @@ using namespace std;
 
 int main()
 {
-    int a=20;
-
-    if(a>15)
-    {
-        cout<<"a is greater than 15";
-    }
-
+    int a=10;
 
     return 0;
 }
 
 
 /*
-    Syntax:
-
-    if(condition) 
-    {
-        Statements to execute if
-        condition is true
-    }
-
-
-
-    Conditons is always boolean
+    This loop control statement is used to terminate the loop. As soon as the break statement is 
+    encountered from within a loop, the loop iterations stops there and control returns from the 
+    loop immediately to the first statement after the loop.
 */
 
 /********************************************************
-Title: If statement
+Title: Break statement
 Author: CAC
 Date: 2nd April 2021
 Description:

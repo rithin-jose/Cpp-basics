@@ -110,7 +110,7 @@ Typers of operators:
 */
 
 /********************************************************
-Title: Input output
+Title: Operators
 Author: CAC
 Date: 31th march 2021
 Description:

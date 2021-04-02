@@ -52,7 +52,7 @@ int main()
 */
 
 /********************************************************
-Title: Input output
+Title: Input output Manipulators
 Author: CAC
 Date: 1st April 2021
 Description:
