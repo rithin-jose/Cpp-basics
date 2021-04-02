@@ -11,10 +11,10 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  7. [Keywords,identifiers and variable naming convention](basics/naming.md)
  8. [Control Flow](control flow/controlflow.md)
 		- Entry Control loop
-			- for loop
-			- while loop
+			- [for loop](control flow/for.cpp)
+			- [while loop](control flow/while.cpp)
 		- Exit Control loop
-			- do-while loop
+			- [do-while loop](control flow/dowhile.cpp)
  9. [conditional statments](conditional/conditional.md)
  	- if-else statements
 		- [if](conditional/if.cpp)
