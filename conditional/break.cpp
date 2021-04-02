@@ -4,7 +4,17 @@ using namespace std;
 
 int main()
 {
-    int a=10;
+     int i;
+    for (i = 1; i <= 15; i++)
+    {
+        printf("%d\n", i);
+        if (i == 10)
+        {
+            cout<<"i ==10";
+            break;  //when i becomes 10, we break out of the loop
+        }
+
+    }
 
     return 0;
 }
