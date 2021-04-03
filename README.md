@@ -27,12 +27,18 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [continue](conditional/continue.cpp)
 		- [return](conditional/return.cpp)
 	- [Switch statement](conditional/switch.cpp)
+ 10. [functions]()
+
+ 11. Macros and Symbolic constants
+		- [preprocessor](header/preprocessor.cpp)
+		- [pragma](header/pragma.cpp)
+		
+ 12. Header files
 
 <!-- 
-11. [Macros and Symbolic constants]()
-12. [functions]()
-
- 8. [Standard Header file]() 
+10. [Macros and Symbolic constants]()
+11. 
+ 12. [Standard Header file]() 
         <> (rand() srand() math functions)
 
 13. [Conversion of arithmetic type]()
