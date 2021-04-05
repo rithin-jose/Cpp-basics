@@ -27,7 +27,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [continue](conditional/continue.cpp)
 		- [return](conditional/return.cpp)
 	- [Switch statement](conditional/switch.cpp)
- 10. [functions](functions/functions.md)  **important read**
+ 10. [functions](functions/functions.md)  **(important read)**
 		- [User Defined Functions](functions/userdefined.cpp)
 		- [Function without parameter not returning value](functions/function1.cpp)
 		- [Function without parameter returning value](functions/function2.cpp)
