@@ -33,7 +33,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 	- [Function without parameter returning value](functions/function2.cpp)
 	- [Function with parameter not returning value](functions/function3.cpp)
 	- [Function with parameter returning value](functions/function4.cpp)
-	- [Function with default arguments]()
+	- [Function with default arguments](functions/default.cpp)
 	- [Call by Value]()
 	- [Call by Reference]()
 	- [Inline function]()
