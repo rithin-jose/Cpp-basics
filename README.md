@@ -36,7 +36,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Function with default arguments](functions/default.cpp)
 		- [Call by Value](functions/callbyvalue.cpp)
 		- [Call by Reference](functions/callbyreference.cpp)
-		- [Inline function]()
+		- [Inline function](functions/inline.cpp)
 		- [Recursive function]()
 
  11. Macros and Symbolic constants
