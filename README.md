@@ -6,6 +6,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  2. [Data Types](basics/datatypes.cpp)
  3. [Input and Output](basics/inputoutput.cpp)
  4. [Input and Output manipulator](basics/manipulator.cpp)
+ 4. [Comments](basics/comments.cpp)
  5. [Operators](basics/operators.cpp)
  6. [Escape Sequence](basics/escape.cpp)
  7. [Keywords,identifiers and variable naming convention](basics/naming.md)
@@ -37,13 +38,16 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Call by Value](functions/callbyvalue.cpp)
 		- [Call by Reference](functions/callbyreference.cpp)
 		- [Inline function](functions/inline.cpp)
-		- [Recursive function]()
 
  11. Macros and Symbolic constants
 		- [preprocessor](header/preprocessor.cpp)
 		- [pragma](header/pragma.cpp)
 		
  12. Header files
+		- [iostream](basics/inputoutput.cpp)
+		- [stdio.h](header/stdio.cpp)
+		- [cctype](header/cctype.cpp)
+
 
 <!-- 
 10. [Macros and Symbolic constants]()
