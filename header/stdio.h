@@ -31,7 +31,7 @@ int main()
 /********************************************************
 Title: Stdio.h
 Author: CAC
-Date: 5th April 2021
+Date: 7th April 2021
 Description:
-This code was implemented on day 7 of 100 days of code
+This code was implemented on day 10 of 100 days of code
 *********************************************************/
