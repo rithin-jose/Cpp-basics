@@ -40,10 +40,12 @@ int main()
                 cout<<b[i]<<": is a control character"<<endl;    //control char: \b,\n,\t,\r
     }
 
-    char up='A',lo='a';
+    char up='A',lo='a' ,ascii='a';
 
-    cout<<"to upper "<<putchar(toupper(up))<<endl;
-    cout<<"to lower "<<putchar(tolower(up));
+    cout<<"to upper "<<char(toupper(lo))<<endl;
+    cout<<"to lower "<<char(tolower(up))<<endl;
+    
+    cout<<"ASCII value: "<<int(ascii);
     
     return 0;
 }   
@@ -60,8 +62,11 @@ int main()
 
     iscntrl: checks if the character passed as parameter is a control character(formatter of i/o).
 
-    toupper(): changes the character to upper case
-    tolower(): changes the character to lower case
+    toupper(): changes the character to upper case it returns the ascii value
+    tolower(): changes the character to lower case it returns the ascii value
+
+
+    to convet that ascii values we receive we use char() and the inverse is done lusing int()
 
 
 */
