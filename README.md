@@ -47,6 +47,10 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [iostream](basics/inputoutput.cpp)
 		- [stdio.h](header/stdio.cpp)
 		- [cctype](header/cctype.cpp)
+		- [math.h](header/math.cpp)
+		- [iomanip.h](basics/manipulator.cpp)
+		- [stdlib.h](header/stdlib.cpp)
+
 
 
 <!-- 
