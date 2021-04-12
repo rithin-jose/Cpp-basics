@@ -2,6 +2,8 @@
 # C Plus Plus basics
 This repositor is intended to have the topics in cpp from basic to advances topics such as **STL** and implementation of **algorithms**.  For the best experience the following order can be followed:
 
+## Basics
+
  1. [Hello World](basics/helloworld.cpp)
  2. [Data Types](basics/datatypes.cpp)
  3. [Input and Output](basics/inputoutput.cpp)
@@ -51,13 +53,9 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [iomanip.h](basics/manipulator.cpp)
 		- [stdlib.h](header/stdlib.cpp)
 
+## Strings
 
+## Important Programs
 
-<!-- 
-10. [Macros and Symbolic constants]()
-11. 
- 12. [Standard Header file]() 
-        <> (rand() srand() math functions)
-
-13. [Conversion of arithmetic type]()
-14. [Strings]() -->
+ 1. [Command Line arguments](programs/cla.cpp)
+ 2. [Random numbers between range](programs/randomRange.cpp)
