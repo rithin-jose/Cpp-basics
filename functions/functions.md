@@ -72,3 +72,5 @@ ISO C++ 3.6.1 [2]  [read here](http://www.open-std.org/jtc1/sc22/wg21/docs/paper
 The main function accepts two different arguments (command line arguments).
 
 		int argc, char *argv[]			or  	int argc, char **argv
+
+To see the working of Command line arguments click [here](../programs/cla.cpp)
