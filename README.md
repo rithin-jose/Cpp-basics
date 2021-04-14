@@ -30,7 +30,10 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [continue](conditional/continue.cpp)
 		- [return](conditional/return.cpp)
 	- [Switch statement](conditional/switch.cpp)
- 10. [functions](functions/functions.md)  **(important read)**
+
+## Derived Data Type
+
+ 1. [functions](functions/functions.md)  **(important read)**
 		- [User Defined Functions](functions/userdefined.cpp)
 		- [Function without parameter not returning value](functions/function1.cpp)
 		- [Function without parameter returning value](functions/function2.cpp)
@@ -40,18 +43,28 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Call by Value](functions/callbyvalue.cpp)
 		- [Call by Reference](functions/callbyreference.cpp)
 		- [Inline function](functions/inline.cpp)
+ 2. [Array]
+ 3. [Pointer]
+ 4. [Reference]
 
- 11. Macros and Symbolic constants
-		- [preprocessor](header/preprocessor.cpp)
-		- [pragma](header/pragma.cpp)
+## User defined data types
+ 1. Class
+ 2. Structure
+ 3. Union
+ 4. Enum
+ 5. Typedef
+
+## Macros and Symbolic constants
+ 1. [preprocessor](header/preprocessor.cpp)
+ 2. [pragma](header/pragma.cpp)
 		
- 12. Header files
-		- [iostream](basics/inputoutput.cpp)
-		- [stdio.h](header/stdio.cpp)
-		- [cctype](header/cctype.cpp)
-		- [math.h](header/math.cpp)
-		- [iomanip.h](basics/manipulator.cpp)
-		- [stdlib.h](header/stdlib.cpp)
+## Header files
+ 1. [iostream](basics/inputoutput.cpp)
+ 2. [stdio.h](header/stdio.cpp)
+ 3. [cctype](header/cctype.cpp)
+ 4. [math.h](header/math.cpp)
+ 5. [iomanip.h](basics/manipulator.cpp)
+ 6. [stdlib.h](header/stdlib.cpp)
 
 ## Strings
 

@@ -6,13 +6,18 @@ int main()
 {
     char a[100],b[100];
 
-    cout<<"Enter a string: ";
-    cin>>a;
-    cout<<"The word entred is: "<<a<<endl;
+    // cout<<"Enter a string: ";
+    // cin>>a;
+    // cout<<"The word entred is: "<<a<<endl;
     
     cout<<"Enter a string: ";
     cin.get(b,100);
     cout<<"The word entred is: "<<b;
+    cout<<"Enter a string: ";
+    cin.get(a,100);
+    cout<<"The word entred is: "<<a;
+
+
 
     return 0;
 }
