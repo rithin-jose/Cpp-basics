@@ -6,6 +6,7 @@
 Array is a collection of variables of same data type referenced under the same name. they are stored in a contiguous memory locations and can be accessed randomly using indecesof the array.
 
 Eg.
+int a[4].   here 4 is the length of the array.
 
 | 10 | 20 | 56 | 23 |
 |--- |---|---|---|
