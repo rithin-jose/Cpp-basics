@@ -13,8 +13,9 @@ int main()
     cout<<"Enter a string: ";
     cin.get(b,100);
     cout<<"The word entred is: "<<b<<endl;
-    //just use cin.ignore() it will escape any thing after the input
+
     cin.ignore();
+    
     cout<<"Enter a string: ";
     cin.get(a,100);
     cout<<"The word entred is: "<<a<<endl;
@@ -29,6 +30,7 @@ int main()
     so in effect we can get a word not a line.
 
     this is why we use cin.get().
+    cin.ignore() it will escape any thing after the input.
 
 */
 

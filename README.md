@@ -45,6 +45,8 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Inline function](functions/inline.cpp)
  2. [Array](array/array.md)
 		- [Inputing and Outputing an array](array/ioArray.cpp)
+		- [Finding length of array](array/lengthArray.cpp)
+		- [Passing an array to function](array/arrayFunction.cpp)
  3. [Pointer]
  4. [Reference]
 
@@ -73,3 +75,9 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 
  1. [Command Line arguments](programs/cla.cpp)
  2. [Random numbers between range](programs/randomRange.cpp)
+
+
+
+ ## todo(Sections or topics to be covered later)
+	[] Reccursive array printing eg. i[arr]
+	[] length array explanation

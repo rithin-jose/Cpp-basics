@@ -18,6 +18,16 @@ int main()
     {
         cout<<a[i]<<" ";
     }
+    cout<<endl;     //for spacing
+    cout<<endl<<"Address of array element are: "<<endl;
+    for(int i=0;i<4;i++)
+    {
+        cout<<"Address of "<<a[i]<<" is "<<&a[i]<<endl;
+        /*
+            & shows the address of a variable.(more will be covered in 
+            pointer section)
+        */
+    }
 
 
     /*
