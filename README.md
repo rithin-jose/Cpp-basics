@@ -43,7 +43,8 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Call by Value](functions/callbyvalue.cpp)
 		- [Call by Reference](functions/callbyreference.cpp)
 		- [Inline function](functions/inline.cpp)
- 2. [Array]
+ 2. [Array](array/array.md)
+		- [Inputing and Outputing an array](array/ioArray.cpp)
  3. [Pointer]
  4. [Reference]
 
