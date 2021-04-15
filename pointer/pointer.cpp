@@ -9,10 +9,13 @@ int main()
     
     a=10;
     b=&a;
+
     cout<<"Content of a: "<<a<<endl;
     cout<<"Address of a: "<<&a<<" "<<endl<<endl;
+
     cout<<"Content of b: "<<b<<endl;
     cout<<"Address of b: "<<&b<<endl;
+    
     return 0;
 }
 

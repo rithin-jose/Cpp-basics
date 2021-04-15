@@ -18,6 +18,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [while loop](control%20flow/while.cpp)
 	- Exit Control loop
 		- [do-while loop](control%20flow/dowhile.cpp)
+	- [ForEach loop](#forEach) (special loop covered in array section)
  9. [conditional statments](conditional/conditional.md)
  	- if-else statements
 		- [if](conditional/if.cpp)
@@ -43,12 +44,14 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Call by Value](functions/callbyvalue.cpp)
 		- [Call by Reference](functions/callbyreference.cpp)
 		- [Inline function](functions/inline.cpp)
- 2. [Pointer]
- 3. [Array](array/array.md)
+ 2. [Pointer](pointer/pointer.cpp)
+ 3. [Reference](pointer/reference.cpp)
+ 4. [Array](array/array.md)
 		- [Inputing and Outputing an array](array/ioArray.cpp)
 		- [Finding length of array](array/lengthArray.cpp)
 		- [Passing an array to function](array/arrayFunction.cpp)
- 4. [Reference]
+		- <a id="forEach"></a>
+
 
 ## User defined data types
  1. Class
