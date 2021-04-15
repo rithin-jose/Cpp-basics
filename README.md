@@ -43,11 +43,11 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 		- [Call by Value](functions/callbyvalue.cpp)
 		- [Call by Reference](functions/callbyreference.cpp)
 		- [Inline function](functions/inline.cpp)
- 2. [Array](array/array.md)
+ 2. [Pointer]
+ 3. [Array](array/array.md)
 		- [Inputing and Outputing an array](array/ioArray.cpp)
 		- [Finding length of array](array/lengthArray.cpp)
 		- [Passing an array to function](array/arrayFunction.cpp)
- 3. [Pointer]
  4. [Reference]
 
 ## User defined data types
