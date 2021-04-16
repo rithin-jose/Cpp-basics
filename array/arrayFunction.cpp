@@ -35,7 +35,6 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]);
 
     func1(arr);
-
     func2(arr,n);
     func3(arr,n);
 
@@ -54,5 +53,5 @@ Title: Passing Array to function
 Author: CAC
 Date: 16th April 2021
 Description:
-This code was implemented on day 18 of 100 days of code
+This code was implemented on day 19 of 100 days of code
 *********************************************************/
