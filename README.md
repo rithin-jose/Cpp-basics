@@ -83,4 +83,5 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 
  ## todo(Sections or topics to be covered later)
 	[] Reccursive array printing eg. i[arr]
-	[] length array explanation
+	[x] length array explanation
+	[] forEach loop

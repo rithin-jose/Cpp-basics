@@ -18,7 +18,21 @@ int main()
     // method 2
     int len2 = *(&arr + 1) - arr;
     cout<<"Length of array is: "<<len2<<endl;
-    
+
+    cout<<arr<<endl;
+    cout<<&arr<<endl;
+    cout<<*(&arr+1)<<endl;
+    for(int i=0;i<len;i++)
+    {
+        cout<<"a["<<i<<"]: " <<(&arr[i])<<endl;
+    }
+    /*
+        *(&arr+1)gives the address of next element after the array.
+        arr gives the address of a[0]
+
+        so *(&arr)-arr will give the length
+
+    */
 
     return 0;
 }
