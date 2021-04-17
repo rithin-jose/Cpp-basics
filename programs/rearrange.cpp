@@ -69,6 +69,53 @@ void swap3(int arr[],int size)
     resetArray(arr,size);
 }
 
+// Question 4
+void swap4(int arr[],int size)
+{
+    cout<<"Arrangment 4: "<<endl;
+    int i,temp;
+    for(i=0;i<size/2;i++)
+    {
+        temp=arr[i];
+        arr[i]=arr[i+(size/2)];
+        arr[i+(size/2)]=temp;
+    }
+    display(arr,size);
+    resetArray(arr,size);
+}
+
+// Question 5
+void swap5(int arr[],int size)
+{
+    cout<<"Arrangment 5: "<<endl;
+    int i,j,temp;
+    for(i=0,j=size-1;i=j;i++,j--)     //two iterations can be simultaneously run separated by ,
+    {
+        temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+    display(arr,size);
+    resetArray(arr,size);
+}
+
+//Pattern Question
+void pattern()
+{
+    int arr[] = {1,2,3,4};
+    int i,j;
+
+    for(i=0;i<4;i++)        //controls row
+    {
+        for(j=0;j<=i;j++)   //controls column
+        {
+            cout<<arr[j];
+        }
+        cout<<endl;
+    }
+}    //will be much clear after 2D array Section
+
+
 
 int main()
 {
@@ -78,7 +125,10 @@ int main()
     swap(arr,size);
     swap2(arr,size);
     swap3(arr,size);
-
+    swap4(arr,size);
+    swap5(arr,size);
+    pattern();
+    
     return 0;
 }
 
@@ -88,14 +138,24 @@ int main()
 
     Rearrange the array as following:
     Q1 | 3| 6| 2| 5| 8| 1| 10| 9| 14| 17|
+
     Q2 | 3| 5| 2| 1| 8| 9| 10| 17| 14| 6|
+
     Q3 | 14| 6| 3| 5| 2| 1| 8| 9| 10| 17|
-    
-    Consider the array:
-        | 6| 3| 5| 2| 10| 8| 9| 10| 17| 14|
-    
-    Rearrange the array as following:
-    Q4  | 6| 3| 5| 2| 1| 8| 9| 10| 17| 14|
+
+    Q4 | 8| 9| 10| 17| 14| 6| 3| 5| 2| 1|
+
+    Q5 |6 |3 |5 |2 |1 |8 |9 |10 |17 |14 |
+
+    Consider the array
+    |1|2|3|4|
+
+    print the following:
+    1
+    1 2
+    1 2 3
+    1 2 3 4
+
 
 */
 

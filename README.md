@@ -51,14 +51,16 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 	- [Finding length of array](array/lengthArray.cpp)
 	- [Passing an array to function](array/arrayFunction.cpp)
 	- <a id="forEach"></a>
+	- [Few questions](array/rearrange.cpp) **important**
+	- forEach Loop
 
 
 ## User defined data types
- 1. Class
- 2. Structure
- 3. Union
- 4. Enum
- 5. Typedef
+ 1. Union
+ 2. Enum
+ 3. Typedef
+ 4. Structure
+ 5. Class
 
 ## Macros and Symbolic constants
  1. [preprocessor](header/preprocessor.cpp)
@@ -73,6 +75,10 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  6. [stdlib.h](header/stdlib.cpp)
 
 ## Strings
+
+## Data Structures
+
+## Algorithm
 
 ## Important Programs
 
