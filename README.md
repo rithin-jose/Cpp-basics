@@ -50,9 +50,8 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 	- [Inputing and Outputing an array](array/ioArray.cpp)
 	- [Finding length of array](array/lengthArray.cpp)
 	- [Passing an array to function](array/arrayFunction.cpp)
-	- <a id="forEach"></a>
 	- [Few questions](array/rearrange.cpp) **important**
-	- forEach Loop
+	- <a id="forEach">[forEach Loop](array/forEach.cpp)</a>
 
 
 ## User defined data types

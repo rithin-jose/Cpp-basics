@@ -128,7 +128,7 @@ int main()
     swap4(arr,size);
     swap5(arr,size);
     pattern();
-    
+
     return 0;
 }
 
@@ -162,7 +162,7 @@ int main()
 /********************************************************
 Title: Rearranging array
 Author: CAC
-Date: 16th April 2021
+Date: 16th and 17th April 2021
 Description:
-This code was implemented on day 19 of 100 days of code
+This code was implemented on day 19 & 20 of 100 days of code
 *********************************************************/
