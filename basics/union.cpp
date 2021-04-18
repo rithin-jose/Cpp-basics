@@ -40,7 +40,9 @@ int main()
     };
 
     the size would be 8 ad doble is the largest.
-    
+
+    Dot operator(.) is used to access the member of union.
+
     <-----8 byte---->
     | | | | | | | | |
     <c>
@@ -50,6 +52,11 @@ int main()
 
     Note:size of int on my compiler is 4 byte.
     all the data members sharing the data space will overlap each other.
+
+    Unions can be useful in many situations where we want to use the same 
+    memory for two or more members. 
+
+
 */
 
 /********************************************************
