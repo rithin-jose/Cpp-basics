@@ -20,9 +20,9 @@ int main()
 */
 
 /********************************************************
-Title: Input & output of Array
+Title: For Each loop
 Author: CAC
-Date: 14th April 2021
+Date: 18th April 2021
 Description:
-This code was implemented on day 17 of 100 days of code
+This code was implemented on day 21 of 100 days of code
 *********************************************************/
