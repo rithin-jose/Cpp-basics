@@ -57,7 +57,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 ## User defined data types
  1. [Union](basics/union.cpp)
 	- [pointer to union](basics/unionPointer.cpp)
- 2. Enum
+ 2. [Enum](basics/enum.cpp)
  3. Typedef
  4. Structure
  5. Class
