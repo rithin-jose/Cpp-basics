@@ -82,8 +82,8 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 ## Data Structures
 
 ## Algorithm
-	1. Searching
-	1. Sorting
+ 1. Searching
+ 2. Sorting
 
 ## Important Programs
 
@@ -91,9 +91,12 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  2. [Random numbers between range](programs/randomRange.cpp)
  3. [Swaping nos.](programs/swap.cpp)
 
+ 
+   ## todo(Sections or topics to be covered later)
+	- [ ]  Reccursive array printing eg. i[arr]
+	- [x] length array explanation
+	- [x] forEach loop
+	- [ ] namespace
+	- [ ] Array pointer
+	- [ ] type conversio coersion etc
 
-
- ## todo(Sections or topics to be covered later)
-	[] Reccursive array printing eg. i[arr]
-	[x] length array explanation
-	[x] forEach loop
