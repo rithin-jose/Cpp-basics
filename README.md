@@ -58,7 +58,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  1. [Union](basics/union.cpp)
 	- [pointer to union](basics/unionPointer.cpp)
  2. [Enum](basics/enum.cpp)
- 3. Typedef
+ 3. [Typedef](basics/typedef.cpp)
  4. Structure
  5. Class
 
@@ -86,7 +86,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 
  1. [Command Line arguments](programs/cla.cpp)
  2. [Random numbers between range](programs/randomRange.cpp)
- 3. [Swaping nos.]
+ 3. [Swaping nos.](programs/swap.cpp)
 
 
 
