@@ -1,8 +1,6 @@
 
 ## Array
 
-  
-
 Array is a collection of variables of same data type referenced under the same name. they are stored in a contiguous memory locations and can be accessed randomly using indecesof the array.
 
 Eg.

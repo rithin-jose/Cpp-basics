@@ -53,6 +53,9 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 	- [Few questions](array/rearrange.cpp) **important**
 	- <a id="forEach">[forEach Loop](array/forEach.cpp)</a>
 
+	### 2D Array
+	- [Inputing and Outputing a 2D array](array/2D%20array/ioArray.cpp)
+
 
 ## User defined data types
  1. [Union](basics/union.cpp)
@@ -93,4 +96,4 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  ## todo(Sections or topics to be covered later)
 	[] Reccursive array printing eg. i[arr]
 	[x] length array explanation
-	[] forEach loop
+	[x] forEach loop
