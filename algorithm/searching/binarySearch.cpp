@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 
 using namespace std;
 
@@ -21,17 +22,32 @@ void output(int a[],int size)
 
 }
 
-int linearSearch(int a[],int size,int number)
+int binarySearch(int a[],int size,int number)
 {
-    int index=-1;
-    for(int i = 0;i<size;i++)
+    int index=-1,beg,end,mid;
+
+    beg=0;
+    end=size-1;
+
+    while (beg<=end)
     {
-        if(a[i]==number)
+        mid = (beg+end)/2;
+        if(a[mid] == number)
         {
-            index = i;
+            index = mid;
             break;
         }
+        else if (number > a[mid])
+        {
+            beg = mid+1;
+        }
+        else
+        {
+            end = mid-1;
+        }
+        
     }
+    
     return index;
 }
 
@@ -43,11 +59,12 @@ int main()
     cin>>n;
 
     input(a,n);
+    sort(a,a+n);            //Sorting using std::sort()
 
     cout<<"Enter the no. to be searched ";
     cin>>number;
 
-    index = linearSearch(a,n,number);
+    index = binarySearch(a,n,number);
 
     if(index == -1)
     {
@@ -62,24 +79,18 @@ int main()
 }
 
 /*
-    Linear search works on both sorted and unsorted array but it is a 
-    little inefficient.
-
-    The time complexity of the above algorithm is O(n). 
-
-    Linear search is rarely used practically because other search 
-    algorithms such as the binary search algorithm and hash tables 
-    allow significantly faster-searching comparison to Linear search.
+    Binary search only works for a sorted array. It is much efficient 
+    than linear search.
 
     Complexity for the three cases:
         Best Case:      O(1)
-        Average Case:   O(n)
-        Worst Case:     O(n)
+        Average Case:   O(log n)
+        Worst Case:     O(log n)
 
 */
 
 /********************************************************
-Title: Linear search
+Title: Binary Search
 Author: CAC
 Date: 22th April 2021
 Description:
