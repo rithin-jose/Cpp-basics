@@ -94,5 +94,5 @@ Title: Binary Search
 Author: CAC
 Date: 22th April 2021
 Description:
-This code was implemented on day 24 of 100 days of code
+This code was implemented on day 25 of 100 days of code
 *********************************************************/
