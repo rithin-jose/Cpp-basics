@@ -83,14 +83,19 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 
 ## Algorithm
  1. Searching
+	- [Linear search](algorithm/searching/linearSearch.cpp)
+	- [Binary search](algorithm/searching/binarySearch.cpp)
+	
  2. Sorting
+	- [Bubble sort]()
+	- [Insertion sort]()
 
 ## Important Programs
 
  1. [Command Line arguments](programs/cla.cpp)
  2. [Random numbers between range](programs/randomRange.cpp)
  3. [Swaping nos.](programs/swap.cpp)
-
+ 4. [Element frequency in an array]() **also can be considered as mode in stats**
 
 ## todo(Sections or topics to be covered later)
  - [ ]Reccursive array printing eg. i[arr]
