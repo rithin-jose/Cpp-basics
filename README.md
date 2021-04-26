@@ -88,7 +88,8 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 	- [Binary search](algorithm/searching/binarySearch.cpp)
 	
  2. Sorting
-	- [Bubble sort]()
+	- [Bubble sort theory](algorithm/sorting/bubblesort.md)
+	- [Bubble sort](algorithm/sorting/bubblesort.cpp)
 	- [Insertion sort]()
 
 ## Important Programs
