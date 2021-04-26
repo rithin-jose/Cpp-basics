@@ -55,7 +55,8 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 
 	### 2D Array
 	- [Inputing and Outputing a 2D array](array/2D%20array/ioArray.cpp)
-
+	- [Passing a 2D array to function](array/2D%20array/arrayFuction.cpp)
+	- [Few questions](programs.2Darray.cpp) **important**
 
 ## User defined data types
  1. [Union](basics/union.cpp)
@@ -95,12 +96,13 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  1. [Command Line arguments](programs/cla.cpp)
  2. [Random numbers between range](programs/randomRange.cpp)
  3. [Swaping nos.](programs/swap.cpp)
- 4. [Element frequency in an array]() **also can be considered as mode in stats**
+ 4. [Element frequency in an array](programs/mode.cpp) **also can be considered as mode in stats**
 
 ## todo(Sections or topics to be covered later)
- - [ ]Reccursive array printing eg. i[arr]
- - [x]length array explanation
- - [x]forEach loop
- - [ ]namespace
- - [ ]Array pointer
- - [ ]type conversio coersion etc.
+ - [ ] Reccursive array printing eg. i[arr]
+ - [x] length array explanation
+ - [x] forEach loop
+ - []namespace
+ - [] Array pointer
+ - [ ] type conversio coersion etc.
+ - [ ] mode with map
