@@ -103,7 +103,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  - [ ] Reccursive array printing eg. i[arr]
  - [x] length array explanation
  - [x] forEach loop
- - []namespace
- - [] Array pointer
+ - [ ] namespace
+ - [ ] Array pointer
  - [ ] type conversio coersion etc.
  - [ ] mode with map
