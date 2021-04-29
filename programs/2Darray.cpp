@@ -11,8 +11,8 @@ void display1(int arr[][3],int row,int column)
         for(j=0;j<column;j++)
         {
             /*
-             To display left diagonal we chack i==j
-             To display right diagonal we chack i+j == row-1 or i+j == column-1
+             To display left diagonal we check i==j
+             To display right diagonal we check i+j == row-1 or i+j == column-1
             */
 
             if(i==j || i+j== row-1)
@@ -28,7 +28,23 @@ void display1(int arr[][3],int row,int column)
         }
         cout<<endl;
     }
+}
 
+void display2(int arr[][3],int row,int column)
+{
+    int i,j,sum=0;
+
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            if(i==j || i+j== row-1)
+            {
+                sum+= arr[i][j];
+            }
+        }
+    }
+    cout<<"Sum is: "<<sum;
 }
 
 
@@ -43,6 +59,10 @@ int main()
     int row=3,column=3;
 
     display1(a,row,column);
+    cout<<endl<<endl<<endl;
+
+    display2(a,row,column);
+    cout<<endl<<endl<<endl;
 
     return 0;
 }
@@ -52,6 +72,8 @@ int main()
 
     Questions are:
     1. Display diagonal elements.
+    2. Sum of diagonal elements.
+
 
 */
 
