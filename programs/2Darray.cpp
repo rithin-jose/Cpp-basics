@@ -85,6 +85,27 @@ void display4(int arr[][3],int row,int column)
     }
 }
 
+void display5(int arr[][3],int row,int column)
+{
+    int i,j,sum=0;
+
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            if(j==column/2 || i==row/2)
+            {
+                cout<<arr[i][j]<<" ";
+            }
+            else
+            {
+                cout<<"  ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
 
 int main()
 {
@@ -108,6 +129,9 @@ int main()
     display4(a,row,column);
     cout<<endl<<endl<<endl;
 
+    display5(a,row,column);
+    cout<<endl<<endl<<endl;
+
     return 0;
 }
 
@@ -118,7 +142,8 @@ int main()
     1. Display diagonal elements.
     2. Sum of diagonal elements.
     3. Display upper half diagonal elements.
-    3. Display Lower half diagonal elements.
+    4. Display Lower half diagonal elements.
+    5. Display middle column and middle row.
 
     Index for reference:
          ______________
