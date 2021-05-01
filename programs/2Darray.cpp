@@ -106,6 +106,27 @@ void display5(int arr[][3],int row,int column)
     }
 }
 
+void display6(int arr[][3],int row,int column)
+{
+    int i,j;
+
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            if(i==0 || j==0 || i==row-1 || j==column-1)
+            {
+                cout<<arr[i][j]<<" ";
+            }
+            else
+            {
+                cout<<"  ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
 
 int main()
 {
@@ -132,6 +153,9 @@ int main()
     display5(a,row,column);
     cout<<endl<<endl<<endl;
 
+    display6(a,row,column);
+    cout<<endl<<endl<<endl;
+
     return 0;
 }
 
@@ -144,6 +168,7 @@ int main()
     3. Display upper half diagonal elements.
     4. Display Lower half diagonal elements.
     5. Display middle column and middle row.
+    6. Display elements on the edge of array.
 
     Index for reference:
          ______________
