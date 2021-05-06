@@ -2,6 +2,19 @@
 
 using namespace std;
 
+void displayArray(int arr[][3],int row,int column)
+{
+    int i,j;
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}
+
 void display1(int arr[][3],int row,int column)
 {
     int i,j;
@@ -127,6 +140,64 @@ void display6(int arr[][3],int row,int column)
     }
 }
 
+void display7(int arr[][3],int row,int column)
+{
+    int i,j,temp;
+
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            if(i==0)
+            {
+                temp = arr[i][j];
+                arr[i][j] = arr[row-1][j];
+                arr[row-1][j] = temp;
+            }
+        }
+    }
+
+    displayArray(arr,row,column);
+  
+}
+
+void display8(int arr[][3],int row,int column)
+{
+    int i,j,temp;
+
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            if(j==0)
+            {
+                temp = arr[i][j];
+                arr[i][j] = arr[i][column-1];
+                arr[i][column-1] = temp;
+            }
+        }
+    }
+
+    displayArray(arr,row,column);
+  
+}
+
+void transpose(int arr[][3],int row,int column)
+{
+    int i,j,temp,a[3][3];
+
+    for(i=0;i<row;i++)
+    {
+        for(j=0;j<column;j++)
+        {
+            a[j][i] = arr[i][j];
+        }
+    }
+
+    displayArray(a,row,column);
+  
+}
+
 
 int main()
 {
@@ -156,6 +227,15 @@ int main()
     display6(a,row,column);
     cout<<endl<<endl<<endl;
 
+    display7(a,row,column);
+    cout<<endl<<endl<<endl;
+
+    display8(a,row,column);
+    cout<<endl<<endl<<endl;
+
+    transpose(a,row,column);
+    cout<<endl<<endl<<endl;
+
     return 0;
 }
 
@@ -169,6 +249,9 @@ int main()
     4. Display Lower half diagonal elements.
     5. Display middle column and middle row.
     6. Display elements on the edge of array.
+    7. Swap first and last row of array.
+    8. Swap first and last column of array.
+    9.Transpose of matrix.
 
     Index for reference:
          ______________
