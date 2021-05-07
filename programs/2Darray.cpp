@@ -195,7 +195,6 @@ void transpose(int arr[][3],int row,int column)
     }
 
     displayArray(a,row,column);
-  
 }
 
 
