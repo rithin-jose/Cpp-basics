@@ -36,6 +36,9 @@ int main()
     get the memory address of a variable; which is the location of where the variable 
     is stored on the computer.
 
+    *: at address
+    &: address of
+
 */
 
 /********************************************************
