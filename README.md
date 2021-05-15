@@ -61,15 +61,18 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 
 ## User defined data types
  1. [Union](basics/union.cpp)
-	- [pointer to union](basics/unionPointer.cpp)
-	- [pointer to array](pointer/pointerArray.cpp)
-	- [Dynamic memory allocation](pointer/dynamicMemory.cpp)
-	- [Pointer to function](pointer/pointerToFunction.cpp)
-	- [Pointer to Pointer](pointer/pointerTopointer.cpp)
  2. [Enum](basics/enum.cpp) 
  3. [Typedef](basics/typedef.cpp)
  4. Structure
  5. Class
+
+## Pointer Advaced
+ 1. [pointer to union](basics/unionPointer.cpp)
+ 2. [pointer to array](pointer/pointerArray.cpp)
+ 3. [Dynamic memory allocation](pointer/dynamicMemory.cpp)
+ 4. [Pointer to function](pointer/pointerToFunction.cpp)
+ 5. [Pointer to Pointer](pointer/pointerTopointer.cpp)
+ 6. [Pointer to 2D array](pointer/pointerTo2DArray.cpp)
 
 ## Macros and Symbolic constants
  1. [preprocessor](header/preprocessor.cpp)
@@ -109,6 +112,6 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  - [x] length array explanation
  - [x] forEach loop
  - [ ] namespace
- - [ ] Array pointer
+ - [x] Array pointer
  - [ ] type conversio coersion etc.
  - [ ] mode with map
