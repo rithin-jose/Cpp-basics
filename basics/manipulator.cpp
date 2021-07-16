@@ -19,9 +19,10 @@ int main()
     cout<<pie<<endl;
     cout<<setprecision(20)<<pie<<endl;
     cout<<setprecision(4)<<pie<<endl<<endl;
+    cout<<fixed<<setprecision(4)<<pie<<endl<<endl;
 
     double x = 12.0;
-    cout.precision(3); // Precision 2
+    cout.precision(4); // Precision 2
     cout << "By default: " << x << endl;
     cout << "showpoint: " << showpoint << x << endl;
     cout << "fixed: " << fixed << x << endl;

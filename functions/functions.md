@@ -2,7 +2,7 @@
 
   
 
-A function is a named part of a program which when invoked from other parts of the program performs a specific task and may or maynot return a value.
+A function is a named part of a program which when invoked from other parts of the program performs a specific task and may or may not return a value.
 
   
 
@@ -31,7 +31,7 @@ Types of user defined functions:
   
   
 
-there is another kind of function called **inline functions** which is really efficient but makes the p[rogram really bulky so it's only suitable for samller programmes.
+there is another kind of function called **inline functions** which is really efficient but makes the program really bulky so it's only suitable for samller programmes.
 
 ### Parts of a UDF/Function terminology
 There three parts of a function:

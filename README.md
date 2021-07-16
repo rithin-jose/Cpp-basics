@@ -49,7 +49,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  4. [Array](array/array.md)
 	- [Inputing and Outputing an array](array/ioArray.cpp)
 	- [Finding length of array](array/lengthArray.cpp)
-	- [Passing an array to function](programs/arrayFunction.cpp)
+	- [Passing an array to function](array/arrayFunction.cpp)
 	- [Few questions](array/rearrange.cpp) **important**
 	- <a id="forEach">[forEach Loop](array/forEach.cpp)</a>
 
