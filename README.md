@@ -50,12 +50,12 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 	- [Inputing and Outputing an array](array/ioArray.cpp)
 	- [Finding length of array](array/lengthArray.cpp)
 	- [Passing an array to function](array/arrayFunction.cpp)
-	- [Few questions](array/rearrange.cpp) **important**
+	- [Few questions](programs/rearrange.cpp) **important**
 	- <a id="forEach">[forEach Loop](array/forEach.cpp)</a>
 
 	### 2D Array
 	- [Inputing and Outputing a 2D array](array/2D%20array/ioArray.cpp)
-	- [Passing a 2D array to function](array/2D%20array/arrayFuction.cpp)
+	- [Passing a 2D array to function](array/2D%20array/arrayFunction.cpp)
 	- [Few questions](programs/2Darray.cpp) **important**
 	- [Address Calculation](array/2D%20array/address.md)
 
