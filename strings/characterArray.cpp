@@ -5,10 +5,6 @@ using namespace std;
 int main()
 {
     char a[100],b[100];
-
-    // cout<<"Enter a string: ";
-    // cin>>a;
-    // cout<<"The word entred is: "<<a<<endl;
     
     cout<<"Enter a string: ";
     cin.get(b,100);

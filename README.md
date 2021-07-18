@@ -87,6 +87,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  6. [stdlib.h](header/stdlib.cpp)
 
 ## Strings
+	-	[String](strings/string.md) **important read**
 
 ## Data Structures
 
