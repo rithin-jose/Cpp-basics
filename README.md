@@ -107,6 +107,9 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  2. [Random numbers between range](programs/randomRange.cpp)
  3. [Swaping nos.](programs/swap.cpp)
  4. [Element frequency in an array](programs/mode.cpp) **also can be considered as mode in stats**
+ 5. [Dutch flag Problem](programs/dutchflag.cpp)
+ 5. [Pattern](programs/pattern.cpp)
+ 5. [Sieve of Eratosthenes](programs/eratosthenes.cpp)
 
 ## todo(Sections or topics to be covered later)
  - [ ] Reccursive array printing eg. i[arr]
