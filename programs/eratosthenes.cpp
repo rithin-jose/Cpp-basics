@@ -2,35 +2,38 @@
 
 using namespace std;
 
+void primeSieve(int n);
+
 int main()
 {
-    int n = 30;
-    cout << "Following are the prime numbers smaller "
-         << " than or equal to " << n << endl;
+    int n;
 
-    bool prime[31];
-    memset(prime, true, sizeof(prime));
- 
-    for (int p = 2; p * p <= n; p++)
+    cin>>n;
+    primeSieve(n);
+
+    return 0;
+}
+
+void primeSieve(int n)
+{
+    int array[100] = {0};
+
+    for(int i=2; i<=n ; i++)
     {
-        // If prime[p] is not changed,
-        // then it is a prime
-        if (prime[p] == true)
+        if(array[i] == 0)
         {
-            // Update all multiples
-            // of p greater than or
-            // equal to the square of it
-            // numbers which are multiple
-            // of p and are less than p^2
-            // are already been marked.
-            for (int i = p * p; i <= n; i += p)
-                prime[i] = false;
+            for(int j=i*i ; j<=n ; j+=i)
+            {
+                array[j] = 1;
+            }
         }
     }
- 
-    // Print all prime numbers
-    for (int p = 2; p <= n; p++)
-        if (prime[p])
-            cout << p << " ";
-    return 0;
+
+    for(int i=2 ; i<=n ; i++)
+    {
+        if(array[i] == 0)
+        {
+            cout<<i<<" ";
+        }
+    }
 }
