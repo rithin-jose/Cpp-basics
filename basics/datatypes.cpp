@@ -21,6 +21,7 @@ int main()
     wchar_t w = L'A';
     // 2-4 bytes long and is a character data type has size greater than 8bit data type
     // used to hold UNICODE values as char can hld only ASCII values.
+    // the L is a macro that tells the compiler that the string is unicode.
 
     cout<<a<<endl<<ch<<endl<<istrue<<endl<<pie<<endl<<d<<endl<<w<<endl;
     // Standard end line (endl)
