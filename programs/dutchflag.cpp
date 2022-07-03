@@ -16,13 +16,13 @@ int main()
     {
         switch(array[mid])
         {
-            case 1:
+            case 0:
                     swapper(array,size,low,mid);
                     low++;
                     mid++;
                     break;
 
-            case 0:
+            case 1:
                     mid++;
                     break;
 
@@ -45,7 +45,5 @@ void swapper(int array[],int size,int firstIndex,int secondIndex)
     temp = array[firstIndex];
     array[firstIndex] = array[secondIndex];
     array[secondIndex] = temp;
-    // array[firstIndex] = array[firstIndex] + array[secondIndex];   
-    // array[secondIndex] = array[firstIndex] - array[secondIndex];   
-    // array[firstIndex] = array[firstIndex] - array[secondIndex];   
+
 }

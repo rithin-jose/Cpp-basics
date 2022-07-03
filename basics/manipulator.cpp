@@ -19,6 +19,7 @@ int main()
     cout<<pie<<endl;
     cout<<setprecision(20)<<pie<<endl;
     cout<<setprecision(4)<<pie<<endl<<endl;
+    
     cout<<fixed<<setprecision(4)<<pie<<endl<<endl;
 
     double x = 12.0;
