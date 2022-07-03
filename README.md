@@ -87,7 +87,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  6. [stdlib.h](header/stdlib.cpp)
 
 ## Strings
-	-	[String](strings/string.md) **important read**
+	- [String](strings/string.md) **important read**
 
 ## Data Structures
 
@@ -108,8 +108,13 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  3. [Swaping nos.](programs/swap.cpp)
  4. [Element frequency in an array](programs/mode.cpp) **also can be considered as mode in stats**
  5. [Dutch flag Problem](programs/dutchflag.cpp)
- 5. [Pattern](programs/pattern.cpp)
- 5. [Sieve of Eratosthenes](programs/eratosthenes.cpp)
+ 6. [Pattern](programs/pattern.cpp)
+ 7. [Sieve of Eratosthenes](programs/eratosthenes.cpp)
+ 8. [Balanced Bracket](programs/balancedBracket.cpp)
+ 9. [Generating Binary no](programs/generateBinary.cpp)
+ 10. [Generating Binary till n](programs/generateBinaryTillN.cpp)
+ 11. [Maximum subarray](programs/maxSubArray.cpp)
+ 12. [Next smallest palindrome](programs/maxSubArray.cpp)
 
 ## todo(Sections or topics to be covered later)
  - [ ] Reccursive array printing eg. i[arr]
