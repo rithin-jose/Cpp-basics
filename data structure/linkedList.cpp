@@ -200,23 +200,53 @@ void list::insertionNodeAtPosition(int pos)
 // deleting node at position
 void list::deleteNodeAtPosition(int pos)
 {
-    // if(start == NULL){
-    //     cout<<"Can not delete node list is empty."<<endl;
-    // }
-    // else{
-    //     Node* temp;
-    //     Node* temp2;
-    //     temp=start;
+    Node* temp;
+    Node* temp2;
+    bool outOfBound=false;
 
-    //     for(int i=1; i<pos-1;i++){
-    //         temp=temp->link;
-    //     }
+    if(start == NULL){
+        cout<<"Can not delete node list is empty."<<endl;
+    }
+    else if(pos==0){
+        temp=start;
+        start=start->link;
+        delete temp;
+        cout<<"Data deleted at position "<<pos<<endl;
+    }
+    else{
+        
+        temp=start;
 
-    //     temp2 = temp->link;
-    //     temp->link = temp2->link;
-    //     delete temp2;
-    //     cout<<"Data deleted at position "<<pos<<endl;
-    // }
+        for(int i=1; i<pos;i++){
+            if(temp->link != NULL){
+                temp=temp->link;
+            }
+            else{  
+                outOfBound=true; 
+                break;
+            }
+        }
+
+        if (outOfBound){
+            cout<<"Position is out of bound."<<endl;
+        }
+        else{
+            if (temp->link == NULL){
+                cout<<"Position is out of bound."<<endl;
+            }
+            else{
+                temp2=temp->link;
+                temp->link=temp2->link;
+                
+                if(temp2==last){
+                    last=temp;
+                }
+                
+                delete temp2;
+                cout<<"Data deleted at position "<<pos<<endl;
+            }
+        } 
+    }
 }
 
 // add node at the end
@@ -247,11 +277,11 @@ int main()
     int pos;
 
     // to create a linked list uncomment the following code
-    // ll.addNodeToLast2(1);
-    // ll.addNodeToLast2(2);
-    // ll.addNodeToLast2(3);
-    // ll.addNodeToLast2(4);
-    // ll.addNodeToLast2(5);
+    ll.addNodeToLast2(1);
+    ll.addNodeToLast2(2);
+    ll.addNodeToLast2(3);
+    ll.addNodeToLast2(4);
+    ll.addNodeToLast2(5);
 
     do
     {
