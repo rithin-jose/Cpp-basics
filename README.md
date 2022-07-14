@@ -91,6 +91,7 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 - [String](strings/string.md) **important read**
 
 ## Data Structures
+ 1. [linked list]('data structure/linkedList.cpp')
 
 ## Algorithm
  1. Searching

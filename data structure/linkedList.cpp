@@ -2,8 +2,7 @@
  *  Note:
  *  The code is written with each function being independent of each other.
  *  A much refined and DRY verion can be generted by making dependent code.
-*****************************************************************************************/ 
-
+ *****************************************************************************************/
 
 #include <iostream>
 
@@ -151,101 +150,122 @@ void list::insertionNodeAtPosition(int pos)
 
     bool outOfBound = false;
 
-    if(pos == 0 && start==NULL){
-        nodeptr->link=start;
-        start=nodeptr;
-        last=nodeptr;
+    if (pos == 0 && start == NULL)
+    {
+        nodeptr->link = start;
+        start = nodeptr;
+        last = nodeptr;
     }
 
-    else if(pos == 0 && start!=NULL){
-        nodeptr->link=start;
-        start=nodeptr;
+    else if (pos == 0 && start != NULL)
+    {
+        nodeptr->link = start;
+        start = nodeptr;
     }
 
-    else if(pos>0 && start==NULL){
-        cout<<"List is empty."<<endl;
+    else if (pos > 0 && start == NULL)
+    {
+        cout << "List is empty." << endl;
     }
 
-    else if(pos>0 && start!=NULL){
-        Node* temp=start;
+    else if (pos > 0 && start != NULL)
+    {
+        Node *temp = start;
 
-        for(int i=1;i<pos;i++){
-            if(temp->link != NULL){
-                temp=temp->link;
+        for (int i = 1; i < pos; i++)
+        {
+            if (temp->link != NULL)
+            {
+                temp = temp->link;
             }
-            else{  
-                outOfBound=true; 
+            else
+            {
+                outOfBound = true;
                 break;
             }
         }
 
-        if (outOfBound){
-            cout<<"Position is out of bound."<<endl;
+        if (outOfBound)
+        {
+            cout << "Position is out of bound." << endl;
         }
-        else{
-            if (temp->link == NULL){
-                nodeptr->link=NULL;
-                temp->link=nodeptr;
-                last=nodeptr;
+        else
+        {
+            if (temp->link == NULL)
+            {
+                nodeptr->link = NULL;
+                temp->link = nodeptr;
+                last = nodeptr;
             }
-            else{
-                nodeptr->link=temp->link;
-                temp->link=nodeptr;
+            else
+            {
+                nodeptr->link = temp->link;
+                temp->link = nodeptr;
             }
         }
     }
-
 }
 
 // deleting node at position
 void list::deleteNodeAtPosition(int pos)
 {
-    Node* temp;
-    Node* temp2;
-    bool outOfBound=false;
+    Node *temp;
+    Node *temp2;
+    bool outOfBound = false;
 
-    if(start == NULL){
-        cout<<"Can not delete node list is empty."<<endl;
+    if (start == NULL)
+    {
+        cout << "Can not delete node list is empty." << endl;
     }
-    else if(pos==0){
-        temp=start;
-        start=start->link;
+    else if (pos == 0)
+    {
+        temp = start;
+        start = start->link;
         delete temp;
-        cout<<"Data deleted at position "<<pos<<endl;
+        cout << "Data deleted at position " << pos << endl;
     }
-    else{
-        
-        temp=start;
+    else
+    {
 
-        for(int i=1; i<pos;i++){
-            if(temp->link != NULL){
-                temp=temp->link;
+        temp = start;
+
+        for (int i = 1; i < pos; i++)
+        {
+            if (temp->link != NULL)
+            {
+                temp = temp->link;
             }
-            else{  
-                outOfBound=true; 
+            else
+            {
+                outOfBound = true;
                 break;
             }
         }
 
-        if (outOfBound){
-            cout<<"Position is out of bound."<<endl;
+        if (outOfBound)
+        {
+            cout << "Position is out of bound." << endl;
         }
-        else{
-            if (temp->link == NULL){
-                cout<<"Position is out of bound."<<endl;
+        else
+        {
+            if (temp->link == NULL)
+            {
+                cout << "Position is out of bound." << endl;
             }
-            else{
-                temp2=temp->link;
-                temp->link=temp2->link;
-                
-                if(temp2==last){
-                    last=temp;
+            else
+            {
+                temp2 = temp->link;
+                temp->link = temp2->link;
+
+                if (temp2 == last)
+                {
+                    last = temp;
                 }
-                
+
                 delete temp2;
-                cout<<"Data deleted at position "<<pos<<endl;
+                cout << "Data deleted at position " << pos << endl;
             }
-        } 
+        }
     }
 }
 
@@ -255,7 +275,7 @@ void list::addNodeToLast2(int num)
     Node *nodeptr;
     nodeptr = new Node;
     cout << "Enter the data: ";
-    nodeptr->data=num;
+    nodeptr->data = num;
 
     if (start == NULL)
     {
@@ -334,4 +354,3 @@ int main()
 
     return 0;
 }
-
