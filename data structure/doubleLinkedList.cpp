@@ -19,11 +19,11 @@ class list{
         }
 
         void insetAtBegining(int data);
-        void deleteAtBegining(int pos);
+        void deleteAtBegining();
         void traverseForwards();
         void traverseBackwards();
         void insetAtEnd(int data);
-        void deleteAtEnd(int pos);
+        void deleteAtEnd();
         void insetAtPosition(int data,int pos);
         void deleteAtPosition(int pos);
 };
@@ -48,12 +48,17 @@ class list{
             cout<<"Data entred"<<endl;
         }
 
-        void list::deleteAtBegining(int pos){
+        void list::deleteAtBegining(){
             if(head == NULL){
                 cout<<"List is empty."<<endl;
             }
             else{
-                // Todo
+                Node* temp;
+                temp=head;
+                head=head->next;
+                head->prev=NULL;
+                delete temp;
+                cout<<"Node  deleted";
             }
         }
 
@@ -93,7 +98,7 @@ class list{
 
         }
 
-        void list::deleteAtEnd(int pos){
+        void list::deleteAtEnd(){
 
         }
 
