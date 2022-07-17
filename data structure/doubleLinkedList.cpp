@@ -95,11 +95,52 @@ class list{
         }
 
         void list::insetAtEnd(int data){
+            Node* nodeptr;
+            nodeptr = new Node;
+            nodeptr->data=data;
 
+            if(head == NULL){
+                head=nodeptr;
+                last=head;
+            }
+            else{
+                Node* temp;
+                temp=head;
+
+                while(temp != last){
+                    temp=temp->next;
+                }
+
+                temp->next=nodeptr;
+                nodeptr->prev=temp;
+                last = nodeptr;
+
+                temp=NULL;
+                delete temp;
+            }
         }
 
         void list::deleteAtEnd(){
+            if(head == NULL){
+                cout<<"List is empty"<<endl;
+            }
+            else{
+                Node* temp;
+                temp=last;
+                if(last->prev!=NULL){
+                    last=last->prev;
+                    last->next=NULL;                  
+                }
+                else{
+                    last=NULL;
+                    head=NULL;
+                }
 
+
+                cout<<"Last node deleted"<<endl;
+                delete temp;
+
+            }
         }
 
         void list::insetAtPosition(int data,int pos){
@@ -138,13 +179,21 @@ int main(){
             case 2:
                     cout<<"Enter the position to be deleted ";
                     cin>>pos;
-                    dll.deleteAtBegining(pos);
+                    dll.deleteAtBegining();
                     break;
             case 3:
                     dll.traverseForwards();
                     break;
             case 4:
                     dll.traverseBackwards();
+                    break;
+            case 5:
+                    cout<<"Enter the data to be inserted ";
+                    cin>>data;
+                    dll.insetAtEnd(data);
+                    break;
+            case 6:
+                    dll.deleteAtEnd();
                     break;
         }
 
