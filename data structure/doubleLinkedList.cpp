@@ -12,10 +12,13 @@ class list{
     Node* head;
     Node* last;
 
+
     public:
+        int length;
         list(){
             head=NULL;
             last=NULL;
+            length=0;
         }
 
         void insetAtBegining(int data);
@@ -37,12 +40,14 @@ class list{
             if(head == NULL){
                 head=nodeptr;
                 last=nodeptr;
+                length++;
             }
 
             else{
                 head->prev=nodeptr;
                 nodeptr->next=head;
                 head=nodeptr;
+                length++;
             }
 
             cout<<"Data entred"<<endl;
@@ -59,6 +64,7 @@ class list{
                 head->prev=NULL;
                 delete temp;
                 cout<<"Node  deleted";
+                length--;
             }
         }
 
@@ -102,21 +108,23 @@ class list{
             if(head == NULL){
                 head=nodeptr;
                 last=head;
+                length++;
             }
             else{
-                Node* temp;
-                temp=head;
+                // Node* temp;
+                // temp=head;
 
-                while(temp != last){
-                    temp=temp->next;
-                }
+                // while(temp != last){
+                //     temp=temp->next;
+                // }
 
-                temp->next=nodeptr;
-                nodeptr->prev=temp;
+                last->next=nodeptr;
+                nodeptr->prev=last;
                 last = nodeptr;
+                length++;
 
-                temp=NULL;
-                delete temp;
+                // temp=NULL;
+                // delete temp;
             }
         }
 
@@ -136,7 +144,7 @@ class list{
                     head=NULL;
                 }
 
-
+                length++;
                 cout<<"Last node deleted"<<endl;
                 delete temp;
 
@@ -144,7 +152,46 @@ class list{
         }
 
         void list::insetAtPosition(int data,int pos){
+            if(pos == 0 && head == NULL){
+                insetAtBegining(data);
+            }
+            else if(pos == 0 && head != NULL){
+                insetAtBegining(data);
+            }
+            else if(pos>0 && head == NULL){
+                cout<<"Cannot insert at "<<pos<<" list is empty"<<endl;
+            }
+            else if(pos>0 && head != NULL){
+                if(pos > length){
+                    cout<<"cannot insert, position is out of Bound."<<endl;
+                }
+                else if(pos == length){
+                    insetAtEnd(data);
+                }
+                else{
+                    Node* temp;
+                    Node* nodeptr;
+                    nodeptr=new Node();
 
+                    nodeptr->data=data;
+
+                    for(int i=0;i<pos-1;i++){
+                        temp=temp->next;
+                    }
+
+                    nodeptr->prev=temp;
+                    nodeptr->next=temp->next;
+                    temp->next=nodeptr;
+
+                    temp=nodeptr->next;
+                    temp->prev=nodeptr;
+
+                    temp=nodeptr=NULL;
+                    delete temp;
+                    delete nodeptr;
+
+                }
+            }
         }
 
         void list::deleteAtPosition(int pos){
@@ -155,6 +202,8 @@ int main(){
     int ch,data,pos;
     list dll;
     string ans;
+
+    dll.insertA
 
     do{
         
@@ -195,8 +244,20 @@ int main(){
             case 6:
                     dll.deleteAtEnd();
                     break;
+            case 7:
+                    cout<<"Enter data to be inserted.";
+                    cin>>data;
+                    cout<<"Enter position to be inserted.";
+                    cin>>pos;
+                    dll.insetAtPosition(data,pos);
+                    break;
+            case 8:
+                    cout<<"Enter position to be inserted.";
+                    cin>>pos;
+                    dll.deleteAtPosition(pos);
+                    break;
         }
-
+        cout<<"length of list is "<<dll.length<<endl;
         cout<<endl<<"Do you wish to continue? ";
         cin>>ans;
 
