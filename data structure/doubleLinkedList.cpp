@@ -221,7 +221,7 @@ void list::deleteAtPosition(int pos)
 {
     if (pos == 0 && head == NULL)
     {
-        deleteAtBegining();
+        cout << "Cannot delete at " << pos << " list is empty" << endl;
     }
     else if (pos == 0 && head != NULL)
     {
