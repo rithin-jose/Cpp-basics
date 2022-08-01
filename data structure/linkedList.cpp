@@ -27,7 +27,7 @@ public:
     }
 
     void addNodeToBegining();
-    void deleteNodeToBegining();
+    void deleteNodeAtBegining();
     void traverseNode();
     void addNodeToLast();
     void deleteNodeAtLast();
@@ -60,7 +60,7 @@ void list::addNodeToBegining()
 }
 
 // deletion at the begining
-void list::deleteNodeToBegining()
+void list::deleteNodeAtBegining()
 {
     if (start == NULL)
     {
@@ -322,7 +322,7 @@ int main()
             ll.addNodeToBegining();
             break;
         case 2:
-            ll.deleteNodeToBegining();
+            ll.deleteNodeAtBegining();
             break;
         case 3:
             ll.traverseNode();
