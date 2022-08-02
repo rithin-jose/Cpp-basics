@@ -271,11 +271,12 @@ int main()
     list dll;
     string ans;
 
-    dll.insetAtBegining(5);
-    dll.insetAtBegining(4);
-    dll.insetAtBegining(3);
-    dll.insetAtBegining(2);
-    dll.insetAtBegining(1);
+    // to create a linked list uncomment the following code
+        // dll.insetAtBegining(5);
+        // dll.insetAtBegining(4);
+        // dll.insetAtBegining(3);
+        // dll.insetAtBegining(2);
+        // dll.insetAtBegining(1);
 
     do
     {

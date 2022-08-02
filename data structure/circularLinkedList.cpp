@@ -1,186 +1,215 @@
+/********************************************************************
+ *     Note pointer to last node is taken as insertion/deletion
+ *      to first and last becomes easier.
+ ********************************************************************/
 #include <iostream>
 
 using namespace std;
 
-struct Node{
+struct Node
+{
     int data;
-    Node* next = NULL;
+    Node *next = NULL;
 };
 
 class list
 {
     Node *last;
 
-    public:
-        list()
-        {
-            last = NULL;
-        }
+public:
+    list()
+    {
+        last = NULL;
+    }
 
-        void addNodeToBegining(int data);
-        void deleteNodeAtBegining();
-        void traverseList();
-        void addNodeToLast(int data);
-        void deleteNodeAtLast();
-        void insertionNodeAtPosition(int data,int pos);
-        void deleteNodeAtPosition(int pos);
+    void addNodeToBegining(int data);
+    void deleteNodeAtBegining();
+    void traverseList();
+    void addNodeToLast(int data);
+    void deleteNodeAtLast();
+    void insertionNodeAtPosition(int data, int pos);
+    void deleteNodeAtPosition(int pos);
 };
 
-
-void list::addNodeToBegining(int data){
-    Node* nodeptr;
+void list::addNodeToBegining(int data)
+{
+    Node *nodeptr;
     nodeptr = new Node;
     nodeptr->data = data;
 
-    if(last == NULL){
+    if (last == NULL)
+    {
         last = nodeptr;
-        last->next=nodeptr;
+        last->next = nodeptr;
     }
-    else{
+    else
+    {
         nodeptr->next = last->next;
-        last->next=nodeptr;
+        last->next = nodeptr;
     }
 }
 
-void list::deleteNodeAtBegining(){
-    Node* temp = last->next;
-    if(temp == last)
-        last=NULL;
+void list::deleteNodeAtBegining()
+{
+    Node *temp = last->next;
+    if (temp == last)
+        last = NULL;
 
     else
-        last->next=temp->next;
+        last->next = temp->next;
 
     delete temp;
 }
 
+void list::traverseList()
+{
+    if (last == NULL)
+        cout << "List is empty" << endl;
 
-void list::traverseList(){
-    if(last==NULL)
-        cout<<"List is empty"<<endl;
-    
-    else{
-        Node* temp = last->next;
+    else
+    {
+        Node *temp = last->next;
 
-        while (temp!=last)
+        while (temp != last)
         {
-            cout<<temp->data<<" -> ";
-            temp=temp->next;
+            cout << temp->data << " -> ";
+            temp = temp->next;
         }
-        cout<<temp->data<<" -> front"<<endl;
+        cout << temp->data << " -> front" << endl;
 
-        temp=NULL;
+        temp = NULL;
     }
 }
 
-void list::addNodeToLast(int data){
-    Node* nodeptr;
+void list::addNodeToLast(int data)
+{
+    Node *nodeptr;
     nodeptr = new Node;
     nodeptr->data = data;
 
-    if(last == NULL){
+    if (last == NULL)
+    {
         addNodeToBegining(data);
     }
-    else{
+    else
+    {
         nodeptr->next = last->next;
-        last->next=nodeptr;
+        last->next = nodeptr;
         last = nodeptr;
     }
 }
 
-void list::deleteNodeAtLast(){
-    if(last == NULL){
-        cout<<"List is empty"<<endl;
+void list::deleteNodeAtLast()
+{
+    if (last == NULL)
+    {
+        cout << "List is empty" << endl;
     }
-    else{
-        Node* temp = last->next;
-        if(temp == last)
-            last=NULL;
-        else{
+    else
+    {
+        Node *temp = last->next;
+        if (temp == last)
+            last = NULL;
+        else
+        {
             while (temp->next != last)
             {
-                temp=temp->next;
+                temp = temp->next;
             }
 
-            last=temp;
-            temp=temp->next;
+            last = temp;
+            temp = temp->next;
             last->next = temp->next;
         }
 
-        delete temp;        
+        delete temp;
     }
 }
 
-void list::insertionNodeAtPosition(int data,int pos){
-    Node* nodeptr;
+void list::insertionNodeAtPosition(int data, int pos)
+{
+    Node *nodeptr;
     nodeptr = new Node;
     nodeptr->data = data;
-    int flag=0;
+    int flag = 0;
 
-    if(last == NULL){
-        cout<<"List is empty"<<endl;
+    if (last == NULL)
+    {
+        cout << "List is empty" << endl;
     }
-    else{
-        Node* temp = last->next;
-        while(temp !=last){
-            if(temp->data == pos){
+    else
+    {
+        Node *temp = last->next;
+        while (temp != last)
+        {
+            if (temp->data == pos)
+            {
                 nodeptr->next = temp->next;
-                temp->next=nodeptr;
-                flag=1;
+                temp->next = nodeptr;
+                flag = 1;
                 break;
             }
-            temp=temp->next;
+            temp = temp->next;
         }
-        if(flag==0){
-            cout<<"Could not enter data."<<endl;
+        if (flag == 0)
+        {
+            cout << "Could not enter data." << endl;
         }
-        else{
-            cout<<"Data inserted."<<endl;
+        else
+        {
+            cout << "Data inserted." << endl;
         }
     }
 }
 
-void list::deleteNodeAtPosition(int pos){
-    if(last == NULL){
-        cout<<"List is empty"<<endl;
+void list::deleteNodeAtPosition(int pos)
+{
+    if (last == NULL)
+    {
+        cout << "List is empty" << endl;
     }
-    else{
-        Node* temp = last->next;
-        Node* temp2;
-        int flag=0;
-        
-        while(temp !=last){
-            if(temp->data == pos){
+    else
+    {
+        Node *temp = last->next;
+        Node *temp2;
+        int flag = 0;
+
+        while (temp != last)
+        {
+            if (temp->data == pos)
+            {
                 temp2->next = temp->next;
                 delete temp;
-                flag=1;
+                flag = 1;
                 break;
             }
-            temp2=temp;
-            temp=temp->next;
-            
+            temp2 = temp;
+            temp = temp->next;
         }
-        if(flag==0){
-            cout<<"Could not delete data."<<endl;
+        if (flag == 0)
+        {
+            cout << "Could not delete data." << endl;
         }
-        else{
-            cout<<"Data deleted."<<endl;
+        else
+        {
+            cout << "Data deleted." << endl;
         }
-       
     }
 }
 
 int main()
 {
-    int ch,data;
+    int ch, data;
     list ll;
     string ans;
     int pos;
 
-    ll.addNodeToBegining(3);
-    ll.addNodeToBegining(2);
-    ll.addNodeToBegining(1);
+    // to create a linked list uncomment the following code
+        // ll.addNodeToBegining(3);
+        // ll.addNodeToBegining(2);
+        // ll.addNodeToBegining(1);
 
-    do  
+    do
     {
         cout << "1. Insertion at begining" << endl;
         cout << "2. Deletion at begining" << endl;
@@ -195,41 +224,41 @@ int main()
 
         switch (ch)
         {
-            case 1:
-                cout << "Enter the data to be inserted ";
-                cin >> data;
-                ll.addNodeToBegining(data);
-                break;
-            case 2:
-                ll.deleteNodeAtBegining();
-                break;
-            case 3:
-                ll.traverseList();
-                break;
-            case 4:
-                cout << "Enter the data to be inserted ";
-                cin >> data;
-                ll.addNodeToLast(data);
-                break;
-            case 5:
-                ll.deleteNodeAtLast();
-                break;
-            case 6:
-                cout << "Enter the data after which it needs to be added ";
-                cin >> pos;
-                cout << "Enter the data to be inserted ";
-                cin >> data;
-                ll.insertionNodeAtPosition(data,pos);
-                break;
-            case 7:
-                cout << "Enter the data to be deleted";
-                cin >> pos;
-                ll.deleteNodeAtPosition(pos);
-                break;
+        case 1:
+            cout << "Enter the data to be inserted ";
+            cin >> data;
+            ll.addNodeToBegining(data);
+            break;
+        case 2:
+            ll.deleteNodeAtBegining();
+            break;
+        case 3:
+            ll.traverseList();
+            break;
+        case 4:
+            cout << "Enter the data to be inserted ";
+            cin >> data;
+            ll.addNodeToLast(data);
+            break;
+        case 5:
+            ll.deleteNodeAtLast();
+            break;
+        case 6:
+            cout << "Enter the data after which it needs to be added ";
+            cin >> pos;
+            cout << "Enter the data to be inserted ";
+            cin >> data;
+            ll.insertionNodeAtPosition(data, pos);
+            break;
+        case 7:
+            cout << "Enter the data to be deleted";
+            cin >> pos;
+            ll.deleteNodeAtPosition(pos);
+            break;
 
-            default:
-                cout << "Wrong Choice";
-                break;
+        default:
+            cout << "Wrong Choice";
+            break;
         }
         cout << "Do you want to continue? ";
         cin >> ans;

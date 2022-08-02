@@ -297,11 +297,11 @@ int main()
     int pos;
 
     // to create a linked list uncomment the following code
-    ll.addNodeToLast2(1);
-    ll.addNodeToLast2(2);
-    ll.addNodeToLast2(3);
-    ll.addNodeToLast2(4);
-    ll.addNodeToLast2(5);
+        // ll.addNodeToLast2(1);
+        // ll.addNodeToLast2(2);
+        // ll.addNodeToLast2(3);
+        // ll.addNodeToLast2(4);
+        // ll.addNodeToLast2(5);
 
     do
     {
