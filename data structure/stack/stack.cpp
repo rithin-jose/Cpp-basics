@@ -2,7 +2,6 @@
  *     Note Assumed a stack of size 10
  ********************************************************************/
 #include <iostream>
-#include <bits/stdc++.h>
 
 using namespace std;
 
