@@ -95,7 +95,9 @@ This repositor is intended to have the topics in cpp from basic to advances topi
  2. [Doubly linked list](data%20structure/linked%20list/doubleLinkedList.cpp)
  3. [circular linked list](data%20structure/linked%20list/circularLinkedList.cpp)
  4. [Stack](data%20structure/stack/stack.cpp)
- 4. [Stack](data%20structure/stack/dynamicStack.cpp)
+ 5. [Dynamic Stack](data%20structure/stack/dynamicStack.cpp)
+ 6. [Queue](data%20structure/queue/queue.cpp)
+ 7. [Dynamic Queue](data%20structure/queue/dynamicQueue.cpp)
 
 ## Algorithm
  1. Searching
