@@ -91,13 +91,20 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 - [String](strings/string.md) **important read**
 
 ## Data Structures
- 1. [linked list](data%20structure/linked%20list/linkedList.cpp)
- 2. [Doubly linked list](data%20structure/linked%20list/doubleLinkedList.cpp)
- 3. [circular linked list](data%20structure/linked%20list/circularLinkedList.cpp)
- 4. [Stack](data%20structure/stack/stack.cpp)
- 5. [Dynamic Stack](data%20structure/stack/dynamicStack.cpp)
- 6. [Queue](data%20structure/queue/queue.cpp)
- 7. [Dynamic Queue](data%20structure/queue/dynamicQueue.cpp)
+#### Linked List
+1. [linked list](data%20structure/linked%20list/linkedList.cpp)
+2. [Doubly linked list](data%20structure/linked%20list/doubleLinkedList.cpp)
+3. [circular linked list](data%20structure/linked%20list/circularLinkedList.cpp)
+
+#### Stack
+1. [Stack](data%20structure/stack/stack.cpp)
+2. [Dynamic Stack](data%20structure/stack/dynamicStack.cpp)
+
+#### Queue
+1. [Queue](data%20structure/queue/queue.cpp)
+2. [Dynamic Queue](data%20structure/queue/dynamicQueue.cpp)
+2. [Double Ended Queue](data%20structure/queue/doubleEndedQueue.cpp)
+2. [Circular Queue](data%20structure/queue/circularQueue.cpp)
 
 ## Algorithm
  1. Searching
