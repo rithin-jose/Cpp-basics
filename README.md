@@ -99,12 +99,14 @@ This repositor is intended to have the topics in cpp from basic to advances topi
 #### Stack
 1. [Stack](data%20structure/stack/stack.cpp)
 2. [Dynamic Stack](data%20structure/stack/dynamicStack.cpp)
+2. [Multi Stack]()
 
 #### Queue
 1. [Queue](data%20structure/queue/queue.cpp)
 2. [Dynamic Queue](data%20structure/queue/dynamicQueue.cpp)
-2. [Double Ended Queue](data%20structure/queue/doubleEndedQueue.cpp)
-2. [Circular Queue](data%20structure/queue/circularQueue.cpp)
+3. [Double Ended Queue](data%20structure/queue/doubleEndedQueue.cpp)
+4. [Circular Queue](data%20structure/queue/circularQueue.cpp)
+4. [Multi Queue]()
 
 ## Algorithm
  1. Searching
