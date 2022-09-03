@@ -1,29 +1,74 @@
-/**********************************************************************************
-    Note: Assume n is always less than 10
-**********************************************************************************/
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int main()
-{
-    int n, ch, i, data;
-    char ans;
-    int size = 10;
-    int *stack = new int[size];
+class Stack{
+    int* arr; 
+    int* top; 
+    int* boundary; 
+    int array_size;
 
-    cout << "Enter no of stack: ";
-    cin >> n;
+    int n,k;
 
-    int *top = new int[n];
-    int *boundary = new int[n+1];
+    public:
+        Stack(int size,int n);
+        void push(int item,int stack_no);
+        void pop(int stack_no);
+        void display();
+};
+
+Stack::Stack(int size,int n){
+    array_size=size;
+    arr = new int[size];
+    top = new int[n];
+    boundary = new int[n+1];
 
     top[0] = boundary[0] = -1;
 
     for (int j = 1; j < n; j++)
         top[j] = boundary[j] = (size / n * j) -1;
 
-    boundary[n] = size - 1;
+    boundary[n] = size - 1; 
+}
+
+void Stack::push(int item,int stack_no){
+
+    if(top[stack_no] == boundary[stack_no + 1])
+        cout << "Stack Overflow" << endl;
+    else
+        arr[++top[stack_no]] = item;
+}
+
+void Stack::pop(int stack_no){
+    if (top[stack_no] == boundary[stack_no])
+        cout << "Stack Underflow" << endl;
+
+    else{
+        top[stack_no] = 0;
+        arr[top[stack_no]--];
+    }
+} 
+
+void Stack::display(){
+    cout<<endl;
+    for (int i = 0; i < array_size; i++)  
+        cout << arr[i] <<endl;
+    cout<<endl;
+}
+
+int main(){
+    int n, ch, item,stack_no;
+    char ans;
+    int size;
+
+
+    cout<<"Enter total size: ";
+    cin>>size;
+
+    cout << "Enter no of stack: ";
+    cin >> n;
+
+    Stack s(size,n);
 
     do
     {
@@ -37,45 +82,27 @@ int main()
         switch (ch)
         {
         case 1:
-            cout << "Insert stack no.";
-            cin >> i;
-            cout << "Enter the data to be inserted:";
-            cin >> data;
+            cout<<"Enter data to be inserted: ";
+            cin>>item;
+            cout<<"Enter Stack no.: ";
+            cin>>stack_no;
 
-            if (top[i] == boundary[i + 1])
-                cout << "Stack Overflow" << endl;
-
-            else
-                stack[++top[i]] = data;
-
+            s.push(item,stack_no);
             break;
 
-        case 2:
-            cout << "Insert stack no.";
-            cin >> i;
-            if (top[i] == boundary[i])
-                cout << "Stack Underflow" << endl;
+        case 2: 
+            cout<<"Enter Stack no.: ";
+            cin>>stack_no;  
 
-            else{
-                top[i]=0;
-                stack[top[i]--];
-            }
-                
-
+            s.pop(stack_no);           
             break;
 
         case 3:
-            cout<<endl;
-            for (int i = 0; i < size; i++)
-            {   
-                cout << stack[i] <<endl;
-            }
-            cout<<endl;
+            s.display();
             break;
         }
         cout << "Do you want to continue: ";
         cin >> ans;
     } while (ans == 'Y' || ans == 'y');
-
     return 0;
 }
